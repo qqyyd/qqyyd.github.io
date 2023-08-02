@@ -225,12 +225,12 @@
 <p>首先是1层隐藏层</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#initial</span></span><br><span class="line">net = nn.Sequential(nn.Flatten(),</span><br><span class="line">                    nn.Linear(<span class="number">784</span>, <span class="number">256</span>),</span><br><span class="line">                    nn.ReLU(),</span><br><span class="line">                    nn.Linear(<span class="number">256</span>, <span class="number">10</span>)) </span><br></pre></td></tr></table></figure>
 
-<img src="多层感知机/Figure_1.png" alt="Figure_1" style="zoom:70%;" />
+<img src="/.io//Figure_1.png" alt="Figure_1" style="zoom:70%;">
 
 <p>然后是2层隐藏层</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">net = nn.Sequential(nn.Flatten(),</span><br><span class="line">                    nn.Linear(<span class="number">784</span>, <span class="number">256</span>),</span><br><span class="line">                    nn.ReLU(),</span><br><span class="line">                    nn.Linear(<span class="number">256</span>, <span class="number">256</span>),</span><br><span class="line">                    nn.ReLU(),</span><br><span class="line">                    nn.Linear(<span class="number">256</span>, <span class="number">10</span>))</span><br></pre></td></tr></table></figure>
 
-<img src="多层感知机/Figure_2.png" alt="Figure_2" style="zoom:70%;" />
+<img src="/.io//Figure_2.png" alt="Figure_2" style="zoom:70%;">
 
 <p>我们发现在这样的条件下，最初几次的成功率反而很低，损失函数反而很大。但是这并不意外。对于原本的线性模型而言，用非线性函数去刻画，非线性程度越复杂，最开始的成功率低是正常的。</p>
 
