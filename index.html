@@ -198,7 +198,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-08-02 21:38:53" itemprop="dateModified" datetime="2023-08-02T21:38:53+08:00">2023-08-02</time>
+                <time title="修改时间：2023-08-02 22:01:33" itemprop="dateModified" datetime="2023-08-02T22:01:33+08:00">2023-08-02</time>
               </span>
 
           
@@ -225,11 +225,11 @@
 <p>首先是1层隐藏层</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#initial</span></span><br><span class="line">net = nn.Sequential(nn.Flatten(),</span><br><span class="line">                    nn.Linear(<span class="number">784</span>, <span class="number">256</span>),</span><br><span class="line">                    nn.ReLU(),</span><br><span class="line">                    nn.Linear(<span class="number">256</span>, <span class="number">10</span>)) </span><br></pre></td></tr></table></figure>
 
-<p><img src="/.io//f1.png" alt="Figure_1"></p>
+<p><img src="/images/%E5%A4%9A%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA/f1.png" alt="Figure_1"></p>
 <p>然后是2层隐藏层</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">net = nn.Sequential(nn.Flatten(),</span><br><span class="line">                    nn.Linear(<span class="number">784</span>, <span class="number">256</span>),</span><br><span class="line">                    nn.ReLU(),</span><br><span class="line">                    nn.Linear(<span class="number">256</span>, <span class="number">256</span>),</span><br><span class="line">                    nn.ReLU(),</span><br><span class="line">                    nn.Linear(<span class="number">256</span>, <span class="number">10</span>))</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.io//f2.png" alt="Figure_2"></p>
+<p><img src="/images/%E5%A4%9A%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA/f2.png" alt="Figure_2"></p>
 <p>我们发现在这样的条件下，最初几次的成功率反而很低，损失函数反而很大。但是这并不意外。对于原本的线性模型而言，用非线性函数去刻画，非线性程度越复杂，最开始的成功率低是正常的。</p>
 
       
